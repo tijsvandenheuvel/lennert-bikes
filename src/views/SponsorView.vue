@@ -52,36 +52,15 @@
           <div class="form-container">
             <h2>Sponsor Form</h2>
             <!-- Google Forms Embed -->
-            <!-- Note: In a real implementation, you would replace this with an actual Google Forms embed code -->
             <div class="google-form-embed">
-              <p class="form-placeholder">
-                Google Form will be embedded here. For now, this is a placeholder as we don't have the actual Google Form URL yet.
-              </p>
-              <p class="form-placeholder-note">
-                The form will collect: Name, Email, Amount per 100km, and an optional message.
-              </p>
-              
-              <!-- Mockup of what the form will look like -->
-              <div class="form-mockup">
-                <div class="form-group">
-                  <label for="name">Your Name (Optional)</label>
-                  <input type="text" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                  <label for="amount">Amount per 100km (€) *</label>
-                  <input type="number" id="amount" placeholder="e.g. 5" min="1" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message (Optional)</label>
-                  <textarea id="message" placeholder="Any message for Lennert?"></textarea>
-                </div>
-                <button class="btn btn-primary form-button">Submit Pledge</button>
-                <p class="form-note">* This is a mockup. The actual form will be implemented soon.</p>
-              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOhlOyKvqadsyNCKCSnBhz2PepcjmRroBQXU8VrHLOMfAN1g/viewform?embedded=true" 
+                width="100%" 
+                height="1000" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading...
+              </iframe>
             </div>
           </div>
         </div>
@@ -163,6 +142,12 @@
 
 .google-form-embed {
   margin-top: 1.5rem;
+  height: 100%;
+}
+
+.google-form-embed iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .form-placeholder {

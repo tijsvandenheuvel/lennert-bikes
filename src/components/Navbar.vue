@@ -1,15 +1,53 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+  
+  // When menu is open, prevent body scrolling
+  if (isMenuOpen.value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  document.body.style.overflow = ''
 }
+
+// Close menu when clicking outside
+const handleClickOutside = (event) => {
+  const navbarMenu = document.querySelector('.navbar-menu')
+  const navbarToggle = document.querySelector('.navbar-toggle')
+  
+  if (isMenuOpen.value && 
+      navbarMenu && 
+      !navbarMenu.contains(event.target) && 
+      !navbarToggle.contains(event.target)) {
+    closeMenu()
+  }
+}
+
+// Close menu when window is resized to desktop size
+const handleResize = () => {
+  if (window.innerWidth > 768 && isMenuOpen.value) {
+    closeMenu()
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <template>
@@ -22,7 +60,8 @@ const closeMenu = () => {
       <button 
         class="navbar-toggle" 
         @click="toggleMenu" 
-        aria-label="Toggle navigation menu">
+        aria-label="Toggle navigation menu"
+        :aria-expanded="isMenuOpen">
         <span :class="['toggle-icon', { 'open': isMenuOpen }]"></span>
       </button>
 
@@ -71,6 +110,7 @@ const closeMenu = () => {
   font-weight: 700;
   color: white;
   text-decoration: none;
+  z-index: 1001; /* Ensure logo stays above mobile menu */
 }
 
 .navbar-menu {
@@ -99,6 +139,8 @@ const closeMenu = () => {
   background: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1001; /* Ensure toggle stays above mobile menu */
+  padding: 10px;
 }
 
 .toggle-icon {
@@ -147,28 +189,33 @@ const closeMenu = () => {
 
   .navbar-menu {
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    height: 100vh;
     background-color: var(--dark-color);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    transform: translateY(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     opacity: 0;
-    z-index: 900;
+    z-index: 1000;
   }
 
   .navbar-menu.is-active {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 
   .navbar-link {
-    margin: 0.5rem 0;
-    width: 100%;
-    padding: 0.5rem 0;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
   }
 }
 </style> 

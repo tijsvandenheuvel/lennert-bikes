@@ -42,7 +42,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
             <RouterLink to="/sponsor" class="text-link">Learn how you can help →</RouterLink>
           </div>
           <div class="about-image">
-            <img src="https://via.placeholder.com/500x300" alt="Cycling through mountains" class="rounded-image">
+            <img src="@/assets/lennert_fiets1.jpg" alt="Lennert preparing for the cycling journey" class="rounded-image">
             <p class="image-caption">Preparing for the journey</p>
           </div>
         </div>
