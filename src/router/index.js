@@ -24,6 +24,32 @@ const router = createRouter({
       name: 'admin',
       component: () => import('../views/AdminView.vue')
     },
+    // Redirect from /dist to root
+    {
+      path: '/dist',
+      redirect: '/'
+    },
+    // Redirect from /dist/anything to the proper route
+    {
+      path: '/dist/:pathMatch(.*)*',
+      redirect: to => {
+        const { params } = to
+        return `/${params.pathMatch.join('/')}`
+      }
+    },
+    // Redirect from /lennert-bikes to root
+    {
+      path: '/lennert-bikes',
+      redirect: '/'
+    },
+    // Redirect from /lennert-bikes/anything to the proper route
+    {
+      path: '/lennert-bikes/:pathMatch(.*)*',
+      redirect: to => {
+        const { params } = to
+        return `/${params.pathMatch.join('/')}`
+      }
+    },
     // 404 pagina
     {
       path: '/:pathMatch(.*)*',
