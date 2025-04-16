@@ -22,13 +22,7 @@
         <div class="map-container">
           <!-- Polarsteps Embed Placeholder -->
           <!-- In a real implementation, replace this with the actual Polarsteps embed code -->
-          <div class="polarsteps-placeholder">
-            <div class="placeholder-message">
-              <h3>Polarsteps Map Coming Soon</h3>
-              <p>The journey will begin soon. When it starts, a live interactive map will appear here showing Lennert's exact route and latest position.</p>
-              <p class="small">You'll be able to click on points along the route to see updates and photos from specific locations.</p>
-            </div>
-          </div>
+          <iframe width="100%" height="500" src="https://www.polarsteps.com/tijsvandenheuvel/17403636-lennert-bikes/embed"></iframe>
           
           <div class="map-details">
             <div class="detail-item">

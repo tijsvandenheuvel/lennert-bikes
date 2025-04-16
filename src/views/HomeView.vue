@@ -88,10 +88,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
           </div>
           <div class="update-map">
             <!-- This will be replaced with the Polarsteps embed -->
-            <div class="map-placeholder">
-              <p>Route Map Coming Soon</p>
-              <p class="small">The journey will begin soon. Check back for live tracking!</p>
-            </div>
+            <iframe width="100%" height="400" src="https://www.polarsteps.com/tijsvandenheuvel/17403636-lennert-bikes/embed"></iframe>
           </div>
         </div>
       </div>
