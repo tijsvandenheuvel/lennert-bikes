@@ -4,26 +4,12 @@
   <meta charset="utf-8">
   <title>Lennert Bikes</title>
   <script>
-    // SPA GitHub Pages handler
-    (function() {
-      // If already has a query string (?/) for SPA routing, do nothing
-      if (window.location.search.indexOf('?/') === 0) {
-        return;
-      }
-      
-      var segmentCount = 1; // First segment is 'lennert-bikes'
-      var path = window.location.pathname;
-      
-      // If we're at the root of the site or in the project path with no additional segments, go to index
-      if (path === '/' || path === '/lennert-bikes/' || path === '/lennert-bikes') {
-        window.location.href = '/lennert-bikes/';
-        return;
-      }
-      
-      // For all other paths, redirect to the SPA router format
-      var redirectPath = '/lennert-bikes/?/' + path.slice(('/lennert-bikes/').length);
-      window.location.replace(redirectPath);
-    })();
+    var pathSegmentsToKeep = 0;
+    var location = window.location;
+    var newUrl = location.protocol + '//' + location.hostname + 
+      (location.port ? ':' + location.port : '') + 
+      '/lennert-bikes/';
+    window.location.href = newUrl;
   </script>
 </head>
 <body>

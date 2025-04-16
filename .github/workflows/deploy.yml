@@ -21,34 +21,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install terser for minification
-        run: npm install --save-dev terser
-
       - name: Build
         run: npm run build
 
-      - name: Create required files
+      - name: Prepare for deployment
         run: |
-          # Create .nojekyll file to prevent GitHub from ignoring files that begin with an underscore
+          # Create .nojekyll file
           touch dist/.nojekyll
           
-          # Copy the custom 404.html from public if it exists (should be the SPA handler)
-          if [ -f "public/404.html" ]; then
-            cp public/404.html dist/404.html
-          fi
+          # Copy our 404.html to dist
+          cp public/404.html dist/404.html
           
-          # Create a root redirect (for GitHub user page to project page)
-          # Only used when accessing the root GitHub Pages URL without the /lennert-bikes/ path
-          # This should be used in the ROOT of GitHub Pages, not in the dist folder
-          echo '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Redirecting to Lennert Bikes</title><meta http-equiv="refresh" content="0; url=/lennert-bikes/"></meta></head><body>If you are not redirected automatically, <a href="/lennert-bikes/">click here</a>.</body></html>' > index.html
-          
-          # Copy the root redirect to gh-pages branch root (JamesIves action will put this in gh-pages root)
-          cp index.html dist/
-
-      - name: Debug - List files
-        run: |
-          ls -la dist/
-          echo "Deployment files ready"
+          # Copy redirector to root
+          echo '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Redirecting...</title><meta http-equiv="refresh" content="0; url=/lennert-bikes/"></meta></head><body>Redirecting to Lennert Bikes...</body></html>' > dist/root-redirect.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
