@@ -37,19 +37,6 @@ const router = createRouter({
         return `/${params.pathMatch.join('/')}`
       }
     },
-    // Redirect from /lennert-bikes to root
-    {
-      path: '/lennert-bikes',
-      redirect: '/'
-    },
-    // Redirect from /lennert-bikes/anything to the proper route
-    {
-      path: '/lennert-bikes/:pathMatch(.*)*',
-      redirect: to => {
-        const { params } = to
-        return `/${params.pathMatch.join('/')}`
-      }
-    },
     // 404 pagina
     {
       path: '/:pathMatch(.*)*',

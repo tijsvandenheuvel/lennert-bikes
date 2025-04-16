@@ -2,35 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Redirecting...</title>
+  <title>Lennert Bikes</title>
   <script>
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    (function(l) {
-      if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-        );
+    // SPA GitHub Pages handler
+    (function() {
+      // If already has a query string (?/) for SPA routing, do nothing
+      if (window.location.search.indexOf('?/') === 0) {
+        return;
       }
-    }(window.location))
-    
-    // Extract the path from the URL
-    var pathSegmentsToKeep = 1; // Keep only the first segment (lennert-bikes)
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') + '/?/' +
-      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
+      
+      var segmentCount = 1; // First segment is 'lennert-bikes'
+      var path = window.location.pathname;
+      
+      // If we're at the root of the site or in the project path with no additional segments, go to index
+      if (path === '/' || path === '/lennert-bikes/' || path === '/lennert-bikes') {
+        window.location.href = '/lennert-bikes/';
+        return;
+      }
+      
+      // For all other paths, redirect to the SPA router format
+      var redirectPath = '/lennert-bikes/?/' + path.slice(('/lennert-bikes/').length);
+      window.location.replace(redirectPath);
+    })();
   </script>
 </head>
 <body>
-  Redirecting to Lennert Bikes...
+  Redirecting...
 </body>
 </html> 
