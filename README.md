@@ -36,7 +36,9 @@ npm run dev
 ```
 lennert-bikes/
 ├── docs/               # Projectdocumentatie
+│   └── .nojekyll       # Voorkomt Jekyll-verwerking op GitHub Pages
 ├── public/             # Statische bestanden
+│   └── .nojekyll       # Voorkomt Jekyll-verwerking op GitHub Pages
 ├── src/                # Frontend broncode
 │   ├── assets/         # Afbeeldingen, fonts, etc.
 │   ├── components/     # Vue componenten
@@ -45,8 +47,13 @@ lennert-bikes/
 │   ├── stores/         # Pinia stores
 │   ├── App.vue         # Root component
 │   └── main.js         # Entry point
-├── server/             # Backend code (Node.js)
+├── dist/               # Gebouwde productiebestanden
+│   └── .nojekyll       # Voorkomt Jekyll-verwerking op GitHub Pages
+├── .github/            # GitHub Actions configuratie
+│   └── workflows/      # Workflows voor CI/CD
+│       └── deploy.yml  # Deployment workflow
 ├── .gitignore          # Git ignore file
+├── vite.config.js      # Vite configuratie
 ├── package.json        # Dependencies en scripts
 └── README.md           # Dit bestand
 ```
@@ -56,6 +63,32 @@ lennert-bikes/
 - `npm run dev`: Start de development server
 - `npm run build`: Bouwt het project voor productie
 - `npm run preview`: Bekijk de gebouwde versie lokaal
+
+### Deployment naar GitHub Pages
+
+Het project wordt automatisch gedeployed naar GitHub Pages wanneer wijzigingen naar de `master` branch worden gepusht. De GitHub Actions workflow in `.github/workflows/deploy.yml` neemt de volgende stappen:
+
+1. Checkout de code
+2. Installeer Node.js 18
+3. Installeer dependencies
+4. Bouw het project
+5. Zorg dat .nojekyll bestand aanwezig is
+6. Deploy de `dist` map naar de `gh-pages` branch
+
+Voor handmatige deployment, volg deze stappen:
+
+```bash
+# Bouw het project
+npm run build
+
+# Zorg dat .nojekyll bestand aanwezig is
+touch dist/.nojekyll
+
+# Deploy naar gh-pages branch
+git add dist -f
+git commit -m "Manual deployment"
+git subtree push --prefix dist origin gh-pages
+```
 
 ## Features
 
