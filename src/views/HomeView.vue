@@ -38,6 +38,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
             <p>
               The journey will take about a month, crossing through breathtaking landscapes and diverse cultures. Follow my updates to experience the journey with me.
             </p>
+            <p>Peace and love</p>
             <RouterLink to="/sponsor" class="text-link">Learn how you can help →</RouterLink>
           </div>
           <div class="about-image">
