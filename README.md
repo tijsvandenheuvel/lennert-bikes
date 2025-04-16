@@ -11,9 +11,31 @@ Een website/platform om Lennert's fietstocht van Thessaloniki naar Ararat te vol
 ## Technische Stack
 
 - **Frontend**: Vue 3 + Vite + Pinia
-- **Backend**: Node.js + Express + PostgreSQL
-- **Hosting**: GitHub Pages (frontend), TBD (backend)
+- **Backend**: Node.js + Express + PostgreSQL (gepland voor Fase 2)
+- **Hosting**: GitHub Pages (frontend), Heroku/Vercel (backend, gepland)
 - **Integraties**: Polarsteps, Google Forms, (later: Mollie, PayPal)
+
+## Features en Status
+
+### Fase 1: ✅ Voltooid
+- ✅ Responsive website met moderne UI
+- ✅ Projectinformatie en reis details
+- ✅ Polarsteps integratie voor routetracking
+- ✅ Google Forms integratie voor sponsoring
+- ✅ Basisstatistieken over afgelegde afstand en sponsoring
+- ✅ GitHub Pages deployment met geautomatiseerde workflow
+
+### Fase 2: 🏗️ Gepland
+- 🔧 PostgreSQL database implementatie
+- 🔧 Node.js + Express backend API
+- 🔧 Admin authenticatie en beveiligd dashboard
+- 🔧 Blog/updates systeem met foto's
+- 🔧 Kilometerstand tracking
+
+### Fase 3: 📅 Later
+- Directe betalingsintegratie (Mollie, PayPal)
+- Geavanceerde kaartintegratie met Leaflet
+- Automatische route updates
 
 ## Ontwikkeling
 
@@ -63,6 +85,7 @@ lennert-bikes/
 - `npm run dev`: Start de development server
 - `npm run build`: Bouwt het project voor productie
 - `npm run preview`: Bekijk de gebouwde versie lokaal
+- `npm run deploy`: Handmatig het project deployen naar GitHub Pages
 
 ### Deployment naar GitHub Pages
 
@@ -72,38 +95,33 @@ Het project wordt automatisch gedeployed naar GitHub Pages wanneer wijzigingen n
 2. Installeer Node.js 18
 3. Installeer dependencies
 4. Bouw het project
-5. Zorg dat .nojekyll bestand aanwezig is
+5. Voegt de benodigde bestanden toe (.nojekyll, redirects, etc.)
 6. Deploy de `dist` map naar de `gh-pages` branch
 
-Voor handmatige deployment, volg deze stappen:
+## Geplande Backend (Fase 2)
 
-```bash
-# Bouw het project
-npm run build
+Voor de volgende fase van het project zijn we van plan:
 
-# Zorg dat .nojekyll bestand aanwezig is
-touch dist/.nojekyll
+1. **Database Setup**
+   - PostgreSQL database voor het opslaan van:
+     - Blog/update posts
+     - Kilometerstand gegevens
+     - Sponsorgegevens
+     - Admin gebruikers
 
-# Deploy naar gh-pages branch
-git add dist -f
-git commit -m "Manual deployment"
-git subtree push --prefix dist origin gh-pages
-```
+2. **API Endpoints**
+   - Node.js + Express backend met endpoints voor:
+     - CRUD operaties voor updates/blog posts
+     - Authenticatie en autorisatie
+     - Kilometerstand bijwerken en ophalen
+     - Sponsorgegevens ophalen
 
-## Features
-
-### MVP (Fase 1)
-- Projectinformatie en reis details
-- Sponsorformulier via Google Forms
-- Polarsteps integratie voor routetracking
-- Admin panel voor kilometerstand updates
-- Statistieken over afgelegde afstand en sponsoring
-
-### Toekomstige Features (Fase 2-3)
-- Eigen blog/updates systeem met foto's
-- Geavanceerde kaartintegratie met Leaflet
-- Directe betalingsintegratie (Mollie, PayPal)
-- Automatische route updates
+3. **Admin Dashboard**
+   - Beveiligde login
+   - Content management voor updates
+   - Upload en beheer van afbeeldingen
+   - Kilometerstanden bijhouden
+   - Sponsorstatistieken bekijken
 
 ## Bijdragen
 
