@@ -2,10 +2,9 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' ? '/lennert-bikes/' : '/', // Dynamic base path
+  base: '/lennert-bikes/', // ✅ Fixed for GitHub Pages
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -17,4 +16,4 @@ export default defineConfig({
     assetsInlineLimit: 0,
     minify: 'terser'
   }
-}) 
+})
