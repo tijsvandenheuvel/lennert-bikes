@@ -8,12 +8,12 @@ import StatsCounter from '@/components/StatsCounter.vue'
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Cycling for Kurdish Rebuilding</h1>
+          <h1>Cycling for Sirkhane</h1>
           <p class="hero-subtitle">
-            Join Lennert's 2500km journey from Thessaloniki to Ararat and help rebuild Kurdish communities affected by the earthquake.
+            Join Lennert on a 2500km cycling adventure from Thessaloniki to Ararat, supporting Sirkhane's mission to bring joy, creativity, and hope to children in challenging circumstances.
           </p>
           <div class="hero-cta">
-            <RouterLink to="/sponsor" class="btn btn-primary">Sponsor Now</RouterLink>
+            <RouterLink to="/sponsor" class="btn btn-primary">Support Sirkhane</RouterLink>
             <RouterLink to="/updates" class="btn btn-outline">Follow the Journey</RouterLink>
           </div>
         </div>
@@ -21,33 +21,93 @@ import StatsCounter from '@/components/StatsCounter.vue'
     </section>
 
     <!-- Stats Counter -->
-    <StatsCounter />
+    <!-- <StatsCounter /> -->
+
+    <!-- Sirkhane Cause section -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>About <a href="https://sirkhane.org" target="_blank" rel="noopener" style="color: var(--dark-color); text-decoration: underline;">Sirkhane</a></h2>
+            <p>
+              Sirkhane is a social circus school founded in 2012 in a region where it is difficult to be a child. Sirkhane's mission is to provide a safe, friendly and embracing environment for children, who are affected by conflicts. We replace their damaged childhood with joy and enrich the children's imagination using the magic of social circus pedagogy.
+            </p>
+            <br>
+            <p>
+              Children have the opportunity to collaborate and form friendships with one another, beyond gender, social and cultural differences. In doing so, they manifest peace, harmony, open mindedness and cheerfulness in their local and global communities.
+            </p>
+            <br>
+            <p>
+              Sirkhane is carrying out activities in Turkey and Iraq, serving children through Sirkhane centers located in Mardin province and to rural areas of Mardin province through mobile units.
+            </p>
+          </div>
+          <div class="about-image">
+            <a href="https://sirkhane.org" target="_blank" rel="noopener">
+              <img src="@/assets/sirkhane_logo.png" alt="Sirkhane social circus school" class="rounded-image">
+            </a>
+            <p class="image-caption">Sirkhane: Social Circus for Children</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- About section -->
     <section class="section">
       <div class="container">
         <div class="about-grid">
-          <div class="about-content">
-            <h2>About the Journey</h2>
-            <p>
-              In the aftermath of the devastating earthquake that hit the Kurdish region, I decided to embark on a cycling journey from Thessaloniki to Ararat – a distance of approximately 2500 kilometers.
-            </p>
-            <p>
-              For every 100km I cycle, you can pledge an amount to support the Kurdish rebuilding efforts. Join me in making a difference!
-            </p>
-            <p>
-              The journey will take about a month, crossing through breathtaking landscapes and diverse cultures. Follow my updates to experience the journey with me.
-            </p>
-            <p>Peace and love</p>
+          <div class="about-content personal-letter">
+            <div class="letter-quote-mark">“</div>
+            <h2 class="letter-title">Hallo lieve allemaal. </h2>
+            <div class="letter-body">
+              <p>
+                Halverwege mijn reis vraag ik jullie om steun en om motivatie.
+              </p>
+              <br>
+              <p>
+                Vertrokken in Thessaloniki (waar ik twee jaar geleden ben teruggedraaid naar België) fiets ik nu richting
+                de zonsopgang, in zuidwestelijk richting door het onherbergzaam Anatoliaans landschap.
+              </p>
+              <br>
+              <p>
+                Deze tocht leerde me al dat wanneer de omstandigheden zwaar worden, de mensen des te behulpzamer.
+                Ik zou graag iets teruggeven aan de gemeenschap waar ik tijdelijk deel van uitmaak en die me al zoveel
+                geleerd heeft.
+              </p>
+              <br>
+              <p>
+                Weldra fiets ik richting Mardin, waar de organisatie Sirkhane kinderen inspireert en begeleidt in circus,
+                muziek en fotografie. Ze werken met kinderen van verschillende leeftijden en maken geen onderscheid of ze
+                Koerdisch, Turks, Armeens of Syrisch zijn.
+              </p>
+              <br>
+              <p>
+                Geef me een duwtje in de rug en steun deze organisatie door een bedrag te doneren per 100km die ik fiets.
+                Zo berekenen we samen aan het einde van mijn rit hoeveel we integraal aan Sirkhane zullen schenken.
+              </p>
+              <br>
+              <p>
+                Ik dank jullie,
+                de kinderen van Sirkhane danken jullie,
+              </p>
+              <br>
+              <p class="letter-signature">
+                Liefs, Lennert
+              </p>
+            </div>
+            <div class="letter-quote-mark end">”</div>
             <RouterLink to="/sponsor" class="text-link">Learn how you can help →</RouterLink>
           </div>
           <div class="about-image">
-            <img src="@/assets/lennert_fiets1.jpg" alt="Lennert preparing for the cycling journey" class="rounded-image">
+            <img src="@/assets/lennert_fiets1.jpg" alt="Lennert preparing for the cycling journey"
+              class="rounded-image">
             <p class="image-caption">Preparing for the journey</p>
+            <img src="@/assets/lennert_fiets4.jpeg" alt="Lennert on the road, mirror photo" class="rounded-image mt-1">
+            <p class="image-caption">On the road: a moment of reflection</p>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- How it works -->
     <section class="section bg-light">
@@ -57,17 +117,19 @@ import StatsCounter from '@/components/StatsCounter.vue'
           <div class="step-card">
             <div class="step-number">1</div>
             <h3>Sponsor Per 100km</h3>
-            <p>Choose an amount to pledge for every 100km of the journey. For example, €5 per 100km would mean a total of about €125 for the entire journey.</p>
+            <p>Choose an amount to pledge for every 100km of the journey. For example, €5 per 100km would mean a total
+              of about €125 for the entire journey.</p>
           </div>
           <div class="step-card">
             <div class="step-number">2</div>
             <h3>Follow the Progress</h3>
-            <p>Track the journey through regular updates, photos, and route information as Lennert makes his way from Thessaloniki to Ararat.</p>
+            <p>Track the journey through regular updates, photos, and route information as Lennert makes his way from
+              Thessaloniki to Ararat.</p>
           </div>
           <div class="step-card">
             <div class="step-number">3</div>
             <h3>Make a Difference</h3>
-            <p>At the end of the journey, you'll be contacted with the final amount based on the distance covered. Your contribution goes directly to Kurdish rebuilding efforts.</p>
+            <p>At the end of the journey, you'll be contacted with the final amount based on the distance covered. Your contribution goes directly to Sirkhane Social Circus School.</p>
           </div>
         </div>
         <div class="text-center mt-2">
@@ -84,12 +146,17 @@ import StatsCounter from '@/components/StatsCounter.vue'
           <div class="update-content">
             <h3>Starting the Adventure</h3>
             <p class="update-date">Coming Soon</p>
-            <p>Follow my journey through the Polarsteps app or check the updates page for the latest news, photos, and stories from the road.</p>
+            <p>Follow my journey through the Polarsteps app or check the updates page for the latest news, photos, and
+              stories from the road.</p>
             <RouterLink to="/updates" class="text-link">View all updates →</RouterLink>
           </div>
           <div class="update-map">
-            <!-- This will be replaced with the Polarsteps embed -->
-            <iframe width="100%" height="400" src="https://www.polarsteps.com/tijsvandenheuvel/17403636-lennert-bikes/embed"></iframe>
+
+
+              <iframe width="100%" height="400"
+              src="https://www.polarsteps.com/LennertCarmen/17083263-expedition-sunrise/embed"></iframe>
+
+              
           </div>
         </div>
       </div>
@@ -104,11 +171,14 @@ import StatsCounter from '@/components/StatsCounter.vue'
   color: white;
   padding: 6rem 0;
   text-align: center;
+  background-image: url('@/assets/uitzicht3.png');
+  /* background-repeat: no-repeat, repeat; */
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  
 }
 
 .hero h1 {
@@ -279,21 +349,82 @@ import StatsCounter from '@/components/StatsCounter.vue'
 }
 
 @media (max-width: 768px) {
-  .about-grid, .update-teaser {
+
+  .about-grid,
+  .update-teaser {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .about-content, .about-image {
+
+  .about-content,
+  .about-image {
     order: 0;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero {
     padding: 4rem 0;
   }
 }
-</style> 
+
+.personal-letter {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  background: #fcf9e7;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+}
+.letter-title {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: left;
+}
+.letter-body p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.letter-signature {
+  font-family: 'Dancing Script', cursive, 'Georgia', serif;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-style: normal;
+  color: #222;
+}
+.letter-quote-mark {
+  font-size: 4rem;
+  color: #e0cfa4;
+  position: absolute;
+  left: 1.2rem;
+  top: 0.5rem;
+  font-family: serif;
+  line-height: 1;
+  z-index: 1;
+  user-select: none;
+}
+.letter-quote-mark.end {
+  left: unset;
+  right: 1.2rem;
+  top: unset;
+  bottom: 0.5rem;
+  transform: rotateY(180deg);
+}
+@media (max-width: 768px) {
+  .personal-letter {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .letter-quote-mark, .letter-quote-mark.end {
+    font-size: 2.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+}
+</style>

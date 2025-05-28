@@ -28,7 +28,7 @@ onMounted(async () => {
         <div class="stat-card">
           <div class="stat-value">€{{ statsStore.totalPledged.toLocaleString() }}</div>
           <div class="stat-label">Pledged</div>
-          <div class="stat-description">For Kurdish rebuilding</div>
+          <div class="stat-description">For Sirkhane Social Circus School</div>
         </div>
       </div>
       

@@ -9,7 +9,7 @@
       <div class="container">
         <h1>Sponsor the Journey</h1>
         <p class="lead">
-          For every 100km Lennert cycles from Thessaloniki to Ararat, your pledge will help Kurdish communities rebuild after the earthquake.
+          For every 100km Lennert cycles from Thessaloniki to Ararat, your pledge will help Sirkhane Social Circus School bring joy and creativity to children in challenging circumstances.
         </p>
       </div>
     </section>
@@ -21,7 +21,7 @@
           <div class="form-info">
             <h2>How Your Sponsorship Works</h2>
             <p>
-              By sponsoring this journey, you'll be contributing to Kurdish rebuilding efforts. Here's how it works:
+              By sponsoring this journey, you'll be contributing to Sirkhane Social Circus School. Here's how it works:
             </p>
             <ul class="info-list">
               <li>
@@ -44,7 +44,7 @@
             <div class="cause-info">
               <h3>The Cause</h3>
               <p>
-                The funds raised will go directly to supporting Kurdish communities affected by the earthquake. The specific organization will be announced soon.
+                The funds raised will go directly to Sirkhane Social Circus School, supporting their mission to bring joy, creativity, and hope to children in challenging circumstances.
               </p>
             </div>
           </div>
@@ -82,11 +82,11 @@
           </div>
           <div class="faq-item">
             <h3>Which organization will receive the donations?</h3>
-            <p>We are currently finalizing the details with potential Kurdish organizations. The specific beneficiary will be announced soon, and all sponsors will be informed.</p>
+            <p>All donations will go directly to Sirkhane Social Circus School, an organization dedicated to supporting children through the magic of social circus.</p>
           </div>
           <div class="faq-item">
             <h3>Can I make a one-time donation instead?</h3>
-            <p>Yes, in the future we plan to add direct donation options. For now, we're focusing on per-kilometer sponsorships to encourage following the journey.</p>
+            <p>Yes, in the future we plan to add direct donation options. For now, we're focusing on per-kilometer sponsorships to encourage following the journey. One-time donations to Sirkhane may be possible soon—stay tuned for updates.</p>
           </div>
           <div class="faq-item">
             <h3>How will I know how far Lennert has cycled?</h3>

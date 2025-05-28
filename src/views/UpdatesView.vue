@@ -21,8 +21,7 @@
         <h2>Live Route Tracking</h2>
         <div class="map-container">
           <!-- Polarsteps Embed Placeholder -->
-          <!-- In a real implementation, replace this with the actual Polarsteps embed code -->
-          <iframe width="100%" height="500" src="https://www.polarsteps.com/tijsvandenheuvel/17403636-lennert-bikes/embed"></iframe>
+          <iframe width="100%" height="500" src="https://www.polarsteps.com/LennertCarmen/17083263-expedition-sunrise/embed"></iframe>
           
           <div class="map-details">
             <div class="detail-item">
@@ -47,7 +46,7 @@
         <div class="map-note">
           <p>
             For more detailed and interactive tracking, you can also follow the journey directly on 
-            <a href="#" target="_blank" class="text-link">Polarsteps</a> (link will be available when the journey begins).
+            <a href="https://www.polarsteps.com/LennertCarmen/17083263-expedition-sunrise/" target="_blank" class="text-link">Polarsteps</a>
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear()
         <div class="footer-logo">
           <h3>Lennert Bikes</h3>
           <p>Thessaloniki → Ararat</p>
-          <p class="footer-slogan">Cycling for Kurdish Rebuilding</p>
+          <p class="footer-slogan">Cycling for Sirkhane</p>
         </div>
         
         <div class="footer-nav">
@@ -24,14 +24,14 @@ const currentYear = new Date().getFullYear()
           <h4>Contact</h4>
           <p>
             <!-- Dit zou uiteindelijk een contactpersoon email moeten worden -->
-            <a href="mailto:contact@example.com">contact@example.com</a>
+            <a href="mailto:contact@example.com">lennertc.3@gmail.com</a>
           </p>
           <!-- Sociale media links kunnen hier komen -->
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} Lennert Bikes. All rights reserved.</p>
+        <p>&copy; {{ currentYear }} Freedom in movement. All rights reserved.</p>
       </div>
     </div>
   </footer>

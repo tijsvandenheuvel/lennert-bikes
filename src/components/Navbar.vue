@@ -54,7 +54,7 @@ onUnmounted(() => {
   <nav class="navbar">
     <div class="container navbar-container">
       <RouterLink to="/" class="navbar-logo" @click="closeMenu">
-        Lennert Bikes
+        Freedom in movement
       </RouterLink>
 
       <button 

@@ -1,12 +1,12 @@
 # Lennert Bikes
 
-Een website/platform om Lennert's fietstocht van Thessaloniki naar Ararat te volgen en te sponsoren. Voor elke 100 km die Lennert fietst, kunnen mensen een bedrag doneren om de Koerden te helpen heropbouwen na de aardbeving.
+Een website/platform om Lennert's fietstocht van Thessaloniki naar Ararat te volgen en te sponsoren. Voor elke 100 km die Lennert fietst, kunnen mensen een bedrag doneren om Sirkhane Social Circus School te steunen en kinderen in moeilijke omstandigheden vreugde en creativiteit te brengen.
 
 ## Project Overzicht
 
 - Reis: Thessaloniki → Ararat (ongeveer 2500 km)
 - Duur: Ongeveer 1 maand
-- Doel: Sponsorgeld ophalen voor Koerdische heropbouw na de aardbeving
+- Doel: Sponsorgeld ophalen voor Sirkhane Social Circus School
 
 ## Technische Stack
 
