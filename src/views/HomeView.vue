@@ -43,7 +43,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
           </div>
           <div class="about-image">
             <a href="https://sirkhane.org" target="_blank" rel="noopener">
-              <img src="@/assets/sirkhane_logo.png" alt="Sirkhane social circus school" class="rounded-image">
+              <img src="@/assets/sirkhane.png" alt="Sirkhane social circus school" class="rounded-image">
             </a>
             <p class="image-caption">Sirkhane: Social Circus for Children</p>
           </div>
