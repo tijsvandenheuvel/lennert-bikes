@@ -38,7 +38,7 @@
             </div>
             <div class="detail-item">
               <h4>Estimated Duration</h4>
-              <p>1 month</p>
+              <p>7 weeks</p>
             </div>
           </div>
         </div>
@@ -57,51 +57,85 @@
       <div class="container">
         <h2>Latest Updates</h2>
         <div class="updates-list">
-          <!-- Placeholder for future updates - will be replaced with real content -->
-          <div class="update-card coming-soon">
+          <!-- Real journey updates -->
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 1</span>
+              <span class="update-date">21 April – Thessaloniki</span>
+            </div>
             <div class="update-content">
-              <h3>The Journey Is About To Begin</h3>
-              <p class="update-date">Coming Soon</p>
-              <p>
-                Preparations are underway for the journey from Thessaloniki to Ararat. Check back soon for the first updates from the road!
-              </p>
-              <p>
-                This page will be regularly updated with new stories, photos, and progress reports throughout the journey.
-              </p>
+              <h3>Vertrek uit Thessaloniki</h3>
+              <p>Vandaag, maandag 21 april, vertrek ik uit mijn geliefde stad Thessaloniki. Na mijn vriend Christos gedag gezegd te hebben op de bazaar die hij organiseerde ten voordele van migranten die door de Balkan trekken, begon de klim naar de vallei van de twee meren. Deze regio is gekend voor de vogels die hierlangs trekken en ik spot jonge ooievaars die handig gebruik maken van de wind om hun grote vleugels te spreiden. Spijtig genoeg voor mij blaast de wind recht in mijn gezicht. Ik kampeer op het strand van Stavros en kijk uit naar mijn komende dagen in Griekenland.</p>
             </div>
           </div>
-          
-          <!-- Example of what future updates will look like -->
-          <div class="update-card example">
+          <div class="update-card">
             <div class="update-header">
-              <span class="update-label">Example Update</span>
-            </div>
-            <div class="update-image">
-              <img src="https://via.placeholder.com/800x400" alt="Example update image" class="rounded-image">
+              <span class="update-label">Update 2</span>
+              <span class="update-date">Loutra Eleftheron</span>
             </div>
             <div class="update-content">
-              <h3>Crossing the Border into [Country]</h3>
-              <p class="update-date">Day X - Month XX, 202X</p>
-              <p>
-                This is an example of what update posts will look like. Each update will include photos from the journey, details about the route, interesting encounters, and current progress.
-              </p>
-              <p>
-                Updates will be added regularly throughout the journey, so be sure to check back often to follow Lennert's adventure from Thessaloniki to Ararat.
-              </p>
-              <div class="update-stats">
-                <div class="stat">
-                  <span class="stat-label">Distance today</span>
-                  <span class="stat-value">XX km</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-label">Total distance</span>
-                  <span class="stat-value">XXX km</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-label">Elevation gain</span>
-                  <span class="stat-value">XXX m</span>
-                </div>
-              </div>
+              <h3>Loutra Eleftheron</h3>
+              <p>Ik kies om een klein kiezelwegje langs de kust te volgen in plaats van de grote weg en vind verbaasd twee rugzakken op supermarkt-wieltjes die getrokken worden door twee studenten uit Athene. Ik ontmoet ze later bij de warmwaterbaden en ontdek dat ze te voet al 30 dagen onderweg zijn naar het magische eiland Samothraki, waar ze elke zomer meerdere weken doorbrengen en zich thuis voelen. Ze studeren aan het instituut of fine arts en documenteren hun trip als afstudeerproject. We eten en drinken samen; geslaagde avond.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 3</span>
+              <span class="update-date">Samothraki</span>
+            </div>
+            <div class="update-content">
+              <h3>SAMOTHRAKI</h3>
+              <p>Dit eiland, dat me afgelopen dagen al zo vaak geprezen werd, stelt niet teleur. Bij aankomst flipperen 3 jonge dolfijnen onder de ferry door en ik kijk verbaasd naar de ruige rotsen op het eiland. 20 km breed maar het hoogste punt is 1650m hoog, ongelooflijke natuur. Ik ontmoet vrijwel meteen andere reizigers en iedereen komt uitrusten. Het dorpje Therma blijkt hiervoor een uitstekende plek, gratis camping op het strand, menig waterval met zwemmogelijkheden en een warmwater-bron in een verlaten badhuis. De sfeer is heel gemoedelijk en het tempo ligt hier aanzienlijk trager dan elders in Griekenland. Ik geniet 4 volle dagen en voel me verfrist voor mijn verdere tocht.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 4</span>
+              <span class="update-date">Izmir</span>
+            </div>
+            <div class="update-content">
+              <h3>Izmir</h3>
+              <p>2 jaar geleden was ik vrijwilliger bij de Fix-In-Art organisatie in Thessaloniki. Dit team bestond voornamelijk uit Europese en Turkse twintigers. De graffiti-artieste Jaku uit Izmir werd een goede vriendin en ik beloofde haar te contacteren als ik langs de stad kwam. Haar collectief "Riot Girl Attack" draagt bij aan de heropwaardering van de wijk Darağaç. Hun culturele invloeden in deze (voornamelijk door auto-garages) bewoonde wijk maken het een kleurrijke, interessante plek. Ze zetten in op schilder en graffiti kunst, luistermomenten en workshops.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 5</span>
+              <span class="update-date">Fethiye</span>
+            </div>
+            <div class="update-content">
+              <h3>Fethiye</h3>
+              <p>Afgelopen jaren groeide mijn interesse voor traditionele Turkse en oosterse muziek door het YouTube kanaal Elif'in Hecesi. Deze simpele maar krachtige opnames van getalenteerde muzikanten deden me dromen van een weidse wereld om te verkennen. Na wat onderzoek bleek dat het merendeel van deze opnames gemaakt te zijn rondom de stad Fethiye, met een bijeenkomst van alle muzikanten in de eco-farm Pastoral Vade. Ik was dan ook erg enthousiast toen ik hier aankwam met de fiets en deze plek me werkelijk deed voelen wat ik altijd droomde. Een prachtige verzameling gebouwtjes, rust-hoekjes en een gemeenschappelijke Mutfak (keuken) naast een rivier in een groene vallei. Ik ontdekte jonge mensen die geëngageerd werken aan de teelt van hun eigen groenten en fruit, daarnaast evenementen en workshops organiseren. We zaten rond het kampvuur en ze zongen, zangers en liederen van alle generaties.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 6</span>
+              <span class="update-date">Işık Kapısı</span>
+            </div>
+            <div class="update-content">
+              <h3>Işık Kapısı</h3>
+              <p>Toen ik in de stad Fethiye bedrukt rondfietste door een verkeersincident , stuitte ik op een handcraft-marktje waar een koerdische artiest me aansprak en geruststelde. Hij, die prachtige armbandjes maakt met stenen van over heel Anatolië,  vertelde me dat er op een dag fietsen een werkplaats is van traditionele instrumenten. Aangekomen in het dorpje, vind ik niet meteen de "deur van licht" en vraag het aan een plaatselijke boer. Zijn zoon wijst me de weg met zijn brommer en ik arriveer in een atelier-leefplek volledig gevuld met Zas-instrumenten. In alle vormen en maten, in alle stadia van afwerking. Het is een prachtige werkplek waar jonge artiesten de kunst en traditie aangeleerd krijgen door hun leermeester. Ze eten, spelen en wonen samen om zich volledig over te geven aan hun passie. Ze spreken van het lot wanneer ik hen vertel over mijn interesse in geluidsopnames, aangezien ze daar zelf ook mee wilde experimenteren. We bouwen samen een kleine opnamestudio met wat er voor handen is en ik zie aan hun enthousiasme dat ze me dankbaar zijn.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 7</span>
+              <span class="update-date">Karadiken</span>
+            </div>
+            <div class="update-content">
+              <h3>Imam van Karadiken</h3>
+              <p>Het blijft heet en humid aan de kust. Ik geraak er niet aan gewend en er is weinig ontsnappen aan. Na de enorme inspanningen om in Antalya te geraken en de moeite die het kost om daar uit te rusten door de aanhoudende hitte, beslis ik de bus te nemen inlands. Karaman blijkt die dag nog mogelijk te bereiken en ik voel hernieuwde energie door dit plan. Konya en Karaman zijn gekend voor hun conservatievere geloofsbeleving van de Islam en ik merk op hoe mensen me meer begroeten met Salam Alaikum dan Merhaba, meer met Ewala bedanken dan Teşekkürler. De natuur is hier droog, wijd en leeg, woestenij aan hoogvlaktes en occasioneel een grijze top die omhoog steekt. Ik fiets terug richting kust en bezlks om mijn nacht door te brengen in de moskee van Karadiken. Twee oudere vrouwen heten me welkom en zeggen dat als ik deze wens heb, het voorbestemd is dat ik juist hier aanklop. De imam arriveert rond zonsondergang en nodigt me uit voor het gebed. Het is een ervaring hem de oproep tot gebied te horen maken van zo dichtbij, wat een stem. Ik maak kennis met zijn gezin en we spelen PlayStation voor we samen aan tafel gaan (Türkiye 8 - 0 Belgica). We eten op de grond met een deken over onze benen tegen het morsen en delen een maaltijd. Daarna nodigen hij en zijn oudste zoon van 9 me uit voor het avondgebed en ben ik getuige van een zeer respectvolle handeling tussen vader en zoon, Imam en jonge gelovige. We drinken çay, praten over het reizen en de verantwoordelijkheden die gepaard gaan  met een familie. Ik kruip onder de wol en wordt om 5:23 wakker gezongen door mijn goede vriend die me glimlachend geruststelt dat het bijna gedaan is.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <div class="update-header">
+              <span class="update-label">Update 8</span>
+              <span class="update-date">Tarsus</span>
+            </div>
+            <div class="update-content">
+              <h3>Warmshowers in Tarsus</h3>
+              <p>Warmshowers is een platform dat ik soms gebruik om een slaapplaats te vinden. Het is een website waarbij reizende fietsers contact kunnen opnemen met fietsreizigers die thuis zijn en hun deuren openen voor gasten. Niets beter dan een warme douche na een dag in het zadel. Bade, een opvoedster die een doctoraat ambieert, neemt zowel mij als de Duitse fietser Wolfgang in huis voor een avond. Hij is gepensioneerd en volgt de queeste die Alexander De Grote ondernam door zijn machtszucht. Bade neemt ons beide mee naar haar English Night-les en we worden onthaald als officiële gasten. Het is meer een sociale bijeenkomst van lieve mensen die hun engels willen verbeteren, de verscheidenheid van de groep doet mijn hartje jubelen en hun beweegredenen om elke donderdag tot hier te komen geven me energie (hoewel sommigen "to escape" zeiden). Het is de laatste les van het jaar want de zomervakantie begint volgende week, dus iedereen vertelt zijn dierbaarste moment en ze prijzen hun vriendschappen herhaaldelijk. Het is een fijne groep en ik hoop mee met hen dat het project herhaald wordt.</p>
             </div>
           </div>
         </div>
@@ -254,6 +288,7 @@
   color: var(--primary-color);
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .update-stats {
