@@ -9,7 +9,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
       <div class="container">
         <div class="hero-content">
           <h1>Cycling for Sirkhane</h1>
-          <p class="hero-subtitle">
+          <p class="hero-rsubtitle">
             Join Lennert on a 2500km cycling adventure from Thessaloniki to Ararat, supporting Sirkhane's mission to bring joy, creativity, and hope to children in challenging circumstances.
           </p>
           <div class="hero-cta">
@@ -169,10 +169,9 @@ import StatsCounter from '@/components/StatsCounter.vue'
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x900') no-repeat center center;
   background-size: cover;
   color: white;
-  padding: 6rem 0;
+  padding: 4rem 0;
   text-align: center;
-  background-image: url('@/assets/uitzicht3.png');
-  /* background-repeat: no-repeat, repeat; */
+  background-image: url('@/assets/uitzicht5.png');
 }
 
 .hero-content {
@@ -183,7 +182,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .hero-subtitle {
@@ -197,6 +196,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .btn {

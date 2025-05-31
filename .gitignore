@@ -35,3 +35,6 @@ coverage
 # Project specific
 /docs
 /rules
+
+
+src/assets/unused
