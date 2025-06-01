@@ -38,7 +38,7 @@
               </li>
             </ul>
             <p>
-              <strong>Example:</strong> If you pledge €5 per 100km and Lennert completes the 2500km journey, your total contribution would be €125.
+              <strong>Example:</strong> If you pledge €0,50 per 100km and Lennert completes the 2500km journey, your total contribution would be €12,50.
             </p>
             
             <div class="cause-info">

@@ -65,7 +65,7 @@ import StatsCounter from '@/components/StatsCounter.vue'
               <br>
               <p>
                 Vertrokken in Thessaloniki (waar ik twee jaar geleden ben teruggedraaid naar België) fiets ik nu richting
-                de zonsopgang, in zuidwestelijk richting door het onherbergzaam Anatoliaans landschap.
+                de zonsopgang, in zuidoostelijke richting door het onherbergzaam Anatoliaans landschap.
               </p>
               <br>
               <p>
@@ -108,6 +108,9 @@ import StatsCounter from '@/components/StatsCounter.vue'
       </div>
     </section>
 
+    <div class="video-responsive">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VXbGyJ6NQDI?si=wbhrDBDDymgFsopu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <!-- How it works -->
     <section class="section bg-light">
@@ -144,18 +147,14 @@ import StatsCounter from '@/components/StatsCounter.vue'
         <h2>Latest from the Journey</h2>
         <div class="update-teaser">
           <div class="update-content">
-            <h3>Starting the Adventure</h3>
-            <p class="update-date">Coming Soon</p>
             <p>Follow my journey through the Polarsteps app or check the updates page for the latest news, photos, and
               stories from the road.</p>
             <RouterLink to="/updates" class="text-link">View all updates →</RouterLink>
           </div>
           <div class="update-map">
 
-
               <iframe width="100%" height="400"
               src="https://www.polarsteps.com/LennertCarmen/17083263-expedition-sunrise/embed"></iframe>
-
               
           </div>
         </div>
@@ -426,5 +425,25 @@ import StatsCounter from '@/components/StatsCounter.vue'
     left: 0.5rem;
     right: 0.5rem;
   }
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 </style>

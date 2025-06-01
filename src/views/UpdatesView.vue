@@ -52,6 +52,22 @@
       </div>
     </section>
 
+    <!-- Photo Album section -->
+    <section class="section album-section">
+      <div class="container">
+        <div class="album-card">
+          <h2>Photo Album</h2>
+          <p class="album-description">
+            Explore the journey in pictures! View the full photo album with all the latest images from the road.
+          </p>
+          <a href="https://drive.google.com/drive/folders/1Rbr1g81D2G0KabpV-1JCQTPE7cGFN6af?usp=sharing" target="_blank" class="album-link">
+            <span>View Photo Album on Google Drive</span>
+            <svg class="album-link-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M14.828 9.172a4 4 0 0 1 0 5.656l-3 3a4 4 0 0 1-5.656-5.656l1.414 1.414a2 2 0 1 0 2.828 2.828l3-3a2 2 0 1 0-2.828-2.828l-1.414-1.414a4 4 0 0 1 5.656 0Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Updates section -->
     <section class="section bg-light">
       <div class="container">
@@ -353,5 +369,60 @@
   .newsletter-box {
     padding: 2rem;
   }
+}
+
+.album-section {
+  text-align: center;
+  /* margin: 2rem 0; */
+}
+
+.album-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.10);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.album-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  opacity: 0.85;
+}
+
+.album-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
+  margin-top: 0.5rem;
+}
+
+.album-link:hover {
+  background: var(--secondary-color);
+  opacity: 0.92;
+  box-shadow: 0 4px 16px rgba(52, 152, 219, 0.18);
+}
+
+.album-link-icon {
+  margin-left: 0.75rem;
+  vertical-align: middle;
 }
 </style> 
