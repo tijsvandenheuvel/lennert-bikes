@@ -120,8 +120,8 @@ import StatsCounter from '@/components/StatsCounter.vue'
           <div class="step-card">
             <div class="step-number">1</div>
             <h3>Sponsor Per 100km</h3>
-            <p>Choose an amount to pledge for every 100km of the journey. For example, €5 per 100km would mean a total
-              of about €125 for the entire journey.</p>
+            <p>Choose an amount to pledge for every 100km of the journey. For example, €0,50 per 100km would mean a total
+              of about €12,50 for the entire journey.</p>
           </div>
           <div class="step-card">
             <div class="step-number">2</div>
