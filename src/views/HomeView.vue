@@ -165,12 +165,15 @@ import StatsCounter from '@/components/StatsCounter.vue'
 
 <style scoped>
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x900') no-repeat center center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x900') no-repeat center center; */
   background-size: cover;
   color: white;
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
-  background-image: url('@/assets/uitzicht5.png');
+  background-image: url('@/assets/sirkhane2.jpg');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: 0 80%;
 }
 
 .hero-content {
